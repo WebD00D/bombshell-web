@@ -1,0 +1,108 @@
+/*
+
+Theme Name: Bombshell Waxing Theme
+
+Theme URI: http://wordpress.org/extend/themes/twentyten
+
+Description: New WordPress theme for Bombshell Brazilian Waxing & Skincare Studio of Richmond, Virginia.
+
+Author: Get You Found Online Marketing
+
+Author URI: http://www.getyoufound.com
+
+Version: 1.5
+
+License: GNU General Public License v2 or later
+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu, flexible-header
+
+Text Domain: twentyten
+
+*/
+
+/* =Responsive (Mobile) Design
+-------------------------------------------------------------- */
+
+#menu-main-menu li {
+	
+	margin-left:0px;
+	
+	margin-right:0px;
+	
+}
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px){
+
+	#marilyn,
+	#home-slider,
+	.sub-menu,
+	#primary,
+	.twinkles,
+	#contact-us {
+
+		display:none !important;
+
+	}
+
+	#container,
+	#access .menu-header,
+	div.menu,
+	#colophon,
+	#branding,
+	#main,
+	#wrapper,
+	#service-areas-logos {
+
+		width: 96% !important;
+
+	}
+
+	#access .menu-header, div.menu {
+
+		font-size: 16pt !important;
+
+		width: 96% !important;
+
+	}
+
+	#access .menu-header li, div.menu li {
+
+		float: none !important;
+
+	}
+	
+	#logos {
+		
+		float: none !important;
+		
+		margin:15px auto;
+		
+	}
+
+	#access a {
+
+		text-shadow: none !important;
+
+	}
+	
+	.advanced-recent-posts {
+		
+		margin-left:0px !important;
+		
+	}
+	
+	.advanced-recent-posts div {
+		
+		max-width: 250px !important;
+		
+	}
+	
+	#service-areas table {
+		
+		max-width: 290px !important;
+		
+	}
+
+}
