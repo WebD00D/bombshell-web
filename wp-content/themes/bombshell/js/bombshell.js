@@ -9,6 +9,8 @@ $(window).load(function(){
   $("#index-banner").removeClass('black');
 
   $("#download-button").text("Sign Me Up!");
+
+
  });
 
 $(document).ready(function(){
@@ -54,7 +56,7 @@ $(document).ready(function(){
   $("#weddingBlock").mouseover(function(){
    $(this).css("cursor","pointer");
   })
-
+ 
 
   $("#contentblock3").mouseover(function(){
     $(this).css("cursor","pointer");
@@ -71,9 +73,9 @@ $(document).ready(function(){
 
   $("#partyBlock").mouseover(function(){
     $(this).css("cursor","pointer");
-
+    
   })
-
+  
 
   $("#partyBlock").click(function(){
     window.location.href= "/dr-travis-shaw/";
@@ -84,9 +86,9 @@ $(document).ready(function(){
 
   $("#storyBlock").mouseover(function () {
     $(this).css("cursor","pointer");
-
+  
   })
-
+  
 
   $("#bookingBlock").mouseover(function(){
     $(this).css("cursor","pointer");
@@ -121,7 +123,7 @@ $(document).ready(function(){
   $(".specialsTile").click(function(){
       window.location.href= $(this).attr("data-pagelink");
   })
-
+  
 
   $(".bookingTile").mouseover(function(){
     $(this).css("cursor","pointer");
@@ -136,7 +138,7 @@ $(document).ready(function(){
   $(".giftcardTile").click(function(){
   window.location.href= $(this).attr("data-pagelink");
   })
-
+ 
 
   $(".partyTile").mouseover(function(){
     $(this).css("cursor","pointer");

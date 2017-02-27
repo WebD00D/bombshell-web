@@ -16,9 +16,9 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
 
  ?>
 
-<div id="index-banner" class="black" style="margin-top:0px;background-image:url(<?php echo $bkgrnd_thumb_url; ?>);background-size:cover;background-position:center center">
+<div id="index-banner" class="black homepage-banner" style="margin-top:0px;background-image:url(<?php echo $bkgrnd_thumb_url; ?>);background-size:cover;background-position:center center">
 
- <div class="section no-pad-bot">
+ <div class="section no-pad-bot" style="width: 100%;">
 	 <div class="container">
 		 <div class="row">
 		<div class='col s12 homeHeaderBanner' style='text-align:center'>
@@ -27,8 +27,7 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
 				 <?php echo get_field( "sub_headline" ); ?>
 			 </h4>
 			 <a href="<?php echo get_field('call_to_action_button_link'); ?>" class="btn btn-large waves-effect waves-light  pink white-text" style="font-family:'kinescope';text-transform:none;font-size:x-large"><i class="material-icons right">keyboard_arrow_right</i>
-				 		 <?php echo get_field( "call_to_action_button_text" ); ?>
-
+				 	<?php echo get_field( "call_to_action_button_text" ); ?>
 			</a>
 		</div>
 	 </div>
@@ -50,8 +49,8 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
 
          ?>
 
-				<div class="col s12 m12 l4 " >
-					<div data-pagelink="<?php echo get_field('booking_page_link') ?>" data-imgurl="<?php echo $booking_thumb_url; ?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $booking_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;padding-top:20%;" id="bookingBlock"  class="col s12 center">
+				<div class="col s12 m12 l4" >
+					<div data-pagelink="<?php echo get_field('booking_page_link') ?>" data-imgurl="<?php echo $booking_thumb_url; ?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $booking_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;" id="bookingBlock"  class="col s12 center bombshell-blocks">
 							<a class="tileFancy white-text">  <?php echo get_field('booking_text'); ?></a>
 					</div>
 				</div>
@@ -63,20 +62,23 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
         $services_thumb_url = $services_thumb_url_array[0];
 
          ?>
-				<div data-pagelink="<?php echo get_field('services_page_link') ?>" id="serviceTile" class="col s12 m12 l4 ">
-					<div class="col s12 center service_img"  data-imgurl="<?php echo $services_thumb_url;?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $services_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;padding-top:20%;" id="servicesBlock"   >
+				<div data-pagelink="<?php echo get_field('services_page_link') ?>" id="serviceTile" class="col s12 m12 l4 bombshell-blocks">
+					<div class="col s12 center service_img bombshell-blocks"  data-imgurl="<?php echo $services_thumb_url;?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $services_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;" id="servicesBlock"   >
 					 <a class="tileFancy white-text"><?php echo get_field('services_text'); ?></a>
 					</div>
 				</div>
 
 
 				<div class="col s12 m12 l4">
-					<div id="contentblock" class="col s12 center " style="padding-top:20%" >
+					<div id="contentblock" class="col s12 center bombshell-blocks"  >
 					 <h3 style="font-family:'alternate-gothic-no-1-d';margin-bottom:0px" class=" white-text">#MAKESWAXINGSWEET</h3>
-					 <a href="<?php echo get_field('twitter_link')?>"><i style="margin:5px" class="fa fa-twitter social fa-2x pink-text"></i></a>
-					 <a href="<?php echo get_field('instagram_link')?>"><i style="margin:5px" class="fa fa-instagram social fa-2x pink-text"></i></a>
-					 <a href="<?php echo get_field('facebook_link')?>"><i style="margin:5px" class="fa fa-facebook fa-2x social pink-text"></i></a>
-					 <a href="<?php echo get_field('snapchat_link')?>"><i style="margin:5px" class="fa fa-snapchat fa-2x pink-text social"></i></a>
+           <div class="bombshell-blocks__social">
+             <a href="<?php echo get_field('twitter_link')?>"><i style="margin:5px" class="fa fa-twitter social fa-2x pink-text"></i></a>
+             <a href="<?php echo get_field('instagram_link')?>"><i style="margin:5px" class="fa fa-instagram social fa-2x pink-text"></i></a>
+             <a href="<?php echo get_field('facebook_link')?>"><i style="margin:5px" class="fa fa-facebook fa-2x social pink-text"></i></a>
+             <a href="<?php echo get_field('snapchat_link')?>"><i style="margin:5px" class="fa fa-snapchat fa-2x pink-text social"></i></a>
+           </div>
+
 					</div>
 				</div>
 
@@ -96,7 +98,7 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
              $story_thumb_url = $story_thumb_url_array[0];
 
               ?>
-             <div id="storyBlock" data-pagelink="<?php echo get_field('story_page_link') ?>"  data-imgurl="<?php echo $story_thumb_url; ?>" class="col s12 center" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $story_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;background-position:center center;padding-top:20%;">
+             <div id="storyBlock" data-pagelink="<?php echo get_field('story_page_link') ?>"  data-imgurl="<?php echo $story_thumb_url; ?>" class="col s12 center  bombshell-blocks" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $story_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;background-position:center center;">
                <a class="tileBlock white-text" style='text-transform:uppercase'><?php echo get_field('story_text'); ?></a>
              </div>
            </div>
@@ -109,7 +111,7 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
              $specials_thumb_url = $specials_thumb_url_array[0];
 
               ?>
-            <div id="specialsBlock" data-pagelink="<?php echo get_field('specials_page_link') ?>"  data-imgurl="<?php echo $specials_thumb_url; ?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $specials_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;"  class="col s12 center " >
+            <div id="specialsBlock" data-pagelink="<?php echo get_field('specials_page_link') ?>"  data-imgurl="<?php echo $specials_thumb_url; ?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $specials_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;"  class="col s12 center  bombshell-blocks" >
             <a class="tileBlock white-text"><?php echo get_field('specials_text');?> </a>
              </div>
            </div>
@@ -162,9 +164,6 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
 		                    clean facilities, and cool decor! <Br> <span class="right">- Katie</span>
 		                  </div>
 
-
-
-
 		              </div>
 		           </div>
 		         </div>
@@ -178,7 +177,7 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
               ?>
 
 		         <div class="col s12 m12 l4 giftcardTile" data-pagelink="<?php echo get_field('gift_card_page_link') ?>" >
-		           <div id="giftCardBlock" data-pagelink="<?php echo get_field('gift_card_page_link') ?>" data-imgurl="<?php echo $gc_thumb_url; ?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $gc_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;"  class="col s12 center giftcard_img" >
+		           <div id="giftCardBlock" data-pagelink="<?php echo get_field('gift_card_page_link') ?>" data-imgurl="<?php echo $gc_thumb_url; ?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $gc_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;"  class="col s12 center giftcard_img  bombshell-blocks" >
 		            <a class="tileFancy white-text"><?php echo get_field('gift_card_text'); ?></a>
 		           </div>
 		         </div>
@@ -189,9 +188,8 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
       <div class="section no-pad-bot mainview white" id="index-banner" style='padding-top:0px;margin-top:0px'>
        <div class="row" style="margin-bottom:0px;padding-bottom:15px">
 
-
          <div class="col s12 m12 l4 ">
-           <div id="contentblock3" class="col s12 center" >
+           <div id="contentblock3" class="col s12 center  bombshell-blocks" >
              <a  class="tileBlock white-text">BLOG</a>
            </div>
          </div>
@@ -206,7 +204,7 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
           ?>
 
          <div class="col s12 m12 l4 " data-pagelink="<?php echo get_field('weddings_and_parties_page_link') ?>">
-           <div id="weddingBlock" class="col s12 center " data-imgurl="<?php echo $wedding_thumb_url; ?>" data-pagelink="<?php echo get_field('weddings_and_parties_page_link') ?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $wedding_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;">
+           <div id="weddingBlock" class="col s12 center  bombshell-blocks" data-imgurl="<?php echo $wedding_thumb_url; ?>" data-pagelink="<?php echo get_field('weddings_and_parties_page_link') ?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $wedding_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;">
             <a class="tileFancy white-text"><?php echo get_field('weddings_and_parties_text'); ?></a>
            </div>
          </div>
@@ -222,7 +220,7 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
 
 
          <div class="col s12 m12 l4 " data-pagelink="<?php echo get_field('dr_travis_shaw_page_link') ?>" >
-           <div id="partyBlock" class="col s12 center" data-imgurl="<?php echo $drshaw_thumb_url; ?>"  data-pagelink="<?php echo get_field('dr_travis_shaw_page_link') ?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $drshaw_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;">
+           <div id="partyBlock" class="col s12 center  bombshell-blocks" data-imgurl="<?php echo $drshaw_thumb_url; ?>"  data-pagelink="<?php echo get_field('dr_travis_shaw_page_link') ?>" style="background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(<?php echo $drshaw_thumb_url; ?>);background-size:cover;height:300px;padding-left:0px;">
              <a class="tileBlock white-text" style="text-transform:uppercase"><?php echo get_field('dr_travis_shaw_text'); ?></a>
            </div>
          </div>
@@ -233,4 +231,3 @@ $bkgrnd_thumb_url = $bkgrnd_thumb_url_array[0];
 
 
 	<?php get_footer(); ?>
-

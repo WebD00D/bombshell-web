@@ -5,10 +5,7 @@ Template Name: Single Location
 ?>
 
 
-
 <?php get_header(); ?>
-
-
 
 <?php $img_id = get_field('location_image');?>
 <?php
@@ -18,9 +15,37 @@ $img_thumb_url = $img_thumb_url_array[0];
 
  ?>
 
-<div id="index-banner" class="black" style="margin-top:0px;height:40vh;background:url(<?php echo $img_thumb_url; ?>);background-size:cover;background-position:center center">
 
- <div class="section no-pad-bot">
+<?php if ( get_field('include_popup') ) {  ?>
+
+<div class="popup">
+    <div class="popup__message">
+      <h5>Hey Dollface!</h5>
+      <?php echo get_field('popup_message'); ?>
+      <button id="btnClosePopup" class="btn waves-effect waves-light pink">Close</button>
+    </div>
+
+</div>
+
+<script>
+
+  $("#btnClosePopup").click(function(){
+
+    $(".popup").addClass("popup__hidden");
+
+  })
+
+</script>
+
+
+<?php } ?>
+
+
+
+
+<div id="index-banner" class="black service-banner" style="margin-top:0px;background:url(<?php echo $img_thumb_url; ?>);background-size:cover;background-position:center center">
+
+ <div class="section no-pad-bot" style="width: 100%">
 	 <div class="container">
 
 		 <div class="row">
@@ -45,15 +70,16 @@ $img_thumb_url = $img_thumb_url_array[0];
  <div class="row">
    <div class="col s12">
      <div class="col s12 l7">
-     <div class="video-container">
+     <div class="video-container" style="margin-bottom: 30px">
        <iframe width="853" height="480" src="<?php echo get_field('google_map_embed_url') ?>" frameborder="0" allowfullscreen></iframe>
      </div>
      </div>
 
      <div class="col s12 l5">
        <h4 class="bombshellHeading pink-text" style="font-size:40px"><?php echo get_field('street'); ?></h4>
-        <h4 class="bombshellHeading pink-text" style="font-size:40px"><?php echo get_field('city_/_state_/_zip'); ?></h4>
-         <h4 class="bombshellHeading pink-text" style="font-size:40px"><a class="pink-text" href="tel:<?php echo get_field('telephone'); ?>"><?php echo get_field('telephone'); ?></a></h4>
+       <h4 class="bombshellHeading pink-text" style="font-size:40px"><?php echo get_field('city_/_state_/_zip'); ?></h4>
+       <h4 class="bombshellHeading pink-text" style="font-size:40px"><a class="pink-text" href="tel:<?php echo get_field('telephone'); ?>"><?php echo get_field('telephone'); ?></a></h4>
+       <p><?php echo get_field('custom_message') ?></p>
      </div>
     </div>
    </div>

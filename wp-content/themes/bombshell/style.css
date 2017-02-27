@@ -55,6 +55,8 @@ html {
 
 body {
 	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 article,
@@ -974,7 +976,7 @@ object {
 
     #contentblock{
     background-color:#1f1f1f;
-    background-size:cover;height:300px;padding-left:0px;padding-top:20%;
+    background-size:cover;height:300px;padding-left:0px;
     }
     #contentblock2{
     background-color:#1f1f1f;
@@ -982,7 +984,7 @@ object {
     }
     #contentblock3{
     background-color:#1f1f1f;
-    background-size:cover;height:300px;padding-left:0px;padding-top:20%;
+    background-size:cover;height:300px;padding-left:0px;
     }
 
   .linkit{
@@ -1000,29 +1002,29 @@ object {
 
 
 #specialsBlock{
-	padding-top:12%;
+
 	text-transform:uppercase;
 }
 
 
 #giftCardBlock{
 background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(/wp-content/uploads/2016/03/Giftcard.jpg);
-background-size:cover;height:300px;padding-left:0px;padding-top:25%;
+background-size:cover;height:300px;padding-left:0px;
 }
 
 #partyBlock{
 background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(/wp-content/uploads/2016/03/DrShaw.jpg);
-background-size:cover;height:300px;padding-left:0px;padding-top:25%;
+background-size:cover;height:300px;padding-left:0px;
 }
 
 #blogBlock{
 background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg);
-background-size:cover;height:300px;padding-left:0px;padding-top:23%;
+background-size:cover;height:300px;padding-left:0px;
 }
 
 #weddingBlock{
 background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(/wp-content/uploads/2016/03/Weddings2.jpg);
-background-size:cover;height:300px;padding-left:0px;padding-top:25%;
+background-size:cover;height:300px;padding-left:0px;
 }
 
 #weddingBlock .tileFancy{
@@ -1052,10 +1054,10 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 
  #logome{height:135px;}
 
-.homeHeaderBanner{
+/*.homeHeaderBanner{
   margin-top:10%;
 	margin-bottom:5%;
-}
+}*/
 
 .bombshellpink{color:#EC008B;}
 .service_img{padding-top:25%;}
@@ -1064,7 +1066,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   font-family:'alternate-gothic-no-1-d';
   font-weight:400;
   font-style:normal;
-  font-size: 120px;
+  font-size: 100px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -1126,32 +1128,34 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 
 @media only screen and (max-width : 1920px){
 
-  #mainHeadline{
+  /*#mainHeadline{
       font-size:120px;
       margin-top:4%;
 
-  }
+  }*/
 
 	#specialsBlock{
-    padding-top:9%;
+
 
   }
 
 	#giftCardBlock{
-    padding-top:15%;
+
   }
 
 	.homeHeaderBanner{
-	  margin-top:5%;
-		margin-bottom:5%;
+	  margin-top:7%;
+
 	}
 
 	#bookingBlock{
-		padding-top:10%;
 	}
 
 }
 
+@media only screen and (max-width : 1100px) {
+.bombshellHeading{font-size: 60px;}
+}
 
 @media only screen and (max-width : 1000px) {
 
@@ -1160,7 +1164,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   }
 
   #logome{height:120px;}
-  .bombshellHeading{font-size: 80px;}
+
   .bombshellSubHeading{font-size: 40px;margin-top:15%;margin-bottom:0px;}
   .serviceTile{padding-left:10px;padding-top:10px;padding-right:10px;}
   .storytile {padding-top:10px;margin-top:15px;}
@@ -1173,45 +1177,45 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   .weddingTile {padding-right:0px;margin-top:15px}
 
   #contentblock{
-    padding-top:10%;
+
     margin-top:17px;
   }
   #servicesBlock{
-  padding-top:10%;
+
   margin-top:17px;
   }
 
   #partyBlock{
-    padding-top:10%;
+
     margin-top:17px;
   }
 
   #storyBlock{
-    padding-top:10%;
+
   }
   #bookingBlock{
-    padding-top:10%;
+
   }
   #specialsBlock{
-    padding-top:10%;
+
     margin-top:17px;
   }
   #giftCardBlock{
-    padding-top:11%;
+
   }
   #partyBlock{
-    padding-top:10%;
+
   }
   #blogBlock{
-    padding-top:10%;
+
   }
   #weddingBlock{
-    padding-top:10%;
+
     margin-top:17px;
   }
 
 	#bookingBlock{
-		padding-top:10%;
+
 	}
 }
 
@@ -1259,33 +1263,33 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   }
   #contentblock{
     margin-top:17px;
-    padding-top:15%;
+
   }
   #servicesBlock{
-  padding-top:15%;
+
   margin-top:17px;
   }
   #storyBlock{
-    padding-top:18%;
+
   }
   #bookingBlock{
-    padding-top:15%;
+
   }
   #specialsBlock{
-    padding-top:15%;
+
     margin-top:17px;
   }
   #giftCardBlock{
-    padding-top:15%;
+
   }
   #partyBlock{
-    padding-top:15%;
+
   }
   #blogBlock{
-    padding-top:15%;
+
   }
   #weddingBlock{
-    padding-top:15%;
+
     margin-top:17px;
   }
 }
@@ -1337,7 +1341,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 @media only screen and (max-width : 600px) {
 
 	#contentblock3{
-		padding-top:30%;
+
 	}
 
 .blogTitle{
@@ -1399,7 +1403,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 
 #mainHeadline{
   font-size:50px;
-  margin-top:22%;
+  /*margin-top:22%;*/
 }
 
 #secondaryHeadline{
@@ -1407,34 +1411,34 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 }
 
   #servicesBlock{
-  padding-top:25%;
+
   margin-top:17px;
   }
   #contentblock{
     margin-top:17px;
-    padding-top:22%;
+
   }
   #storyBlock{
-    padding-top:28%;
+
   }
   #bookingBlock{
-    padding-top:25%;
+
   }
   #specialsBlock{
-    padding-top:28%;
+
     margin-top:17px;
   }
   #giftCardBlock{
-    padding-top:25%;
+
   }
   #partyBlock{
-    padding-top:25%;
+
   }
   #blogBlock{
-    padding-top:23%;
+
   }
   #weddingBlock{
-    padding-top:23%;
+
     margin-top:17px;
   }
 
@@ -1565,7 +1569,6 @@ animation-delay: -1.0s;
 }
 
 
-
 .mobileNavigation li a {
 	color:white !important;
 	font-size:30px !important;
@@ -1577,3 +1580,97 @@ animation-delay: -1.0s;
 }
 
 
+
+.popup {
+	display: flex;
+	flex-grow: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	transition: .2s ease;
+
+	background-color: rgba(01,01,01,0.8);
+	z-index: 1;
+
+}
+
+.popup__message {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 205px;
+	width: 600px;
+	margin: 0 auto;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	font-size: 15px;
+	text-align: center;
+	background-color: white;
+}
+
+.popup__message button {
+	margin-top: 20px;
+	font-size: 16px;
+	font-family:'alternate-gothic-no-1-d';
+	font-weight: 300;
+}
+
+.popup__hidden {
+	opacity: 0;
+	z-index: -1
+}
+
+.popup__message h5 {
+	font-family:'alternate-gothic-no-1-d';
+	font-size: 30px;
+}
+
+
+@media (max-width: 700px) {
+
+	.popup__message {
+		width: 85%;
+		height: auto;
+		padding: 30px;
+	}
+
+}
+
+
+.service-banner {
+	height:320px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.homepage-banner {
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
+}
+
+
+.bombshell-blocks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.bombshell-blocks__social {
+	display: flex;
+	flex-direction: row;
+}

@@ -30,7 +30,7 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript" src="/wp-content/themes/bombshell/js/bombshell.js"></script>
+<!-- <script type="text/javascript" src="/wp-content/themes/bombshell/js/bombshell.js"></script> -->
 <script src="https://use.typekit.net/mhf2njr.js"></script>
 <script>try{Typekit.load({ async: false });}catch(e){}</script>
 
@@ -41,7 +41,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
-	<div id="preloader">
+	<!-- <div id="preloader">
 
 		<div class="spinner">
 			 <div class="double-bounce1"></div>
@@ -54,7 +54,7 @@
 				</h4>
 				 <h4 style="color:#eeeeee;font-family:'alternate-gothic-no-1-d'">Just a moment more dollface!</h4>
 			 </div>
-	</div>
+	</div> -->
 
 <div class="m-container nav">
 	<div>
